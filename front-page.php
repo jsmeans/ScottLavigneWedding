@@ -3,33 +3,34 @@
 
 
 <section class="date">
-  <h1>11.12.16</h1><br/>
-  <h1>15h30</h1>
-  
+  <div class="centered">
+    <h1>11.12.16</h1>
+    <h1>15h30</h1>
+  </div>  
 </section>
+
 
 
 <?php get_template_part('content', 'rsvp'); ?>
 
 
 <section class="homenav">
-  <ul>
-    <li>
-      <h1>How We Met</h1>
-    </li>
-    <li>
-      <h1>Accommodation</h1>
-    </li>
-    <li>
-      <h1>Fashion and Themes</h1>
-    </li>
-    <li>
-      <h1>Gift Registry</h1>
-    </li>
-  </ul>
+  
+    <ul>
+      <li>
+        <?php get_template_part('content', 'how'); ?>
+      </li>
+      <li>
+       <?php get_template_part('content', 'hotel'); ?>
+      </li>
+      <li>
+       <?php get_template_part('content', 'fashion'); ?>
+      </li>
+      <li>
+        <?php get_template_part('content', 'registry'); ?>
+      </li>
+    </ul>
   
 </section>
-
-<?php get_template_part('content', 'portfolio'); ?>
 
 <?php get_footer(); ?>

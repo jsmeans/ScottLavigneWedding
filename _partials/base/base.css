@@ -1,0 +1,129 @@
+/* line 1, ../../sass/_partials/base/base.scss */
+body {
+  font-size: 62.5%;
+  letter-spacing: 0.025em;
+}
+
+/* line 6, ../../sass/_partials/base/base.scss */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Asap", sans-serif;
+  line-height: 1.15em;
+}
+
+/* line 11, ../../sass/_partials/base/base.scss */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* line 14, ../../sass/_partials/base/base.scss */
+h1 a {
+  text-decoration: none;
+}
+
+/* line 18, ../../sass/_partials/base/base.scss */
+article {
+  margin-bottom: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #edeff0;
+}
+
+/* line 23, ../../sass/_partials/base/base.scss */
+article:last-child {
+  border-bottom: 0px;
+}
+
+/* line 27, ../../sass/_partials/base/base.scss */
+article h1, article h2, article h3, article h4, article p, article blockquote {
+  font-family: "Asap", sans-serif;
+  color: #384047;
+}
+
+/* line 31, ../../sass/_partials/base/base.scss */
+article h1 {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 40.063em) {
+  /* line 38, ../../sass/_partials/base/base.scss */
+  article h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+/* line 43, ../../sass/_partials/base/base.scss */
+article h2 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width: 40.063em) {
+  /* line 50, ../../sass/_partials/base/base.scss */
+  article h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+/* line 55, ../../sass/_partials/base/base.scss */
+article h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* line 59, ../../sass/_partials/base/base.scss */
+article p {
+  font-size: 1.8em;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* line 64, ../../sass/_partials/base/base.scss */
+article .comment p {
+  font-size: 1.2em;
+}
+
+/* line 67, ../../sass/_partials/base/base.scss */
+.comment-meta a {
+  color: #888;
+  font-size: .8em;
+  margin-bottom: 5px;
+}
+
+/* line 72, ../../sass/_partials/base/base.scss */
+article blockquote {
+  border-left: 3px solid #c6ccd2;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 0 0 5px 20px;
+  margin: 0 0 32px -23px;
+  font-style: italic;
+}
+
+/* line 80, ../../sass/_partials/base/base.scss */
+article .img-container {
+  margin: 0 0 20px;
+}
+
+/* line 83, ../../sass/_partials/base/base.scss */
+article .img-container p {
+  font-size: 12px;
+  color: rgba(198, 204, 210, 0.8);
+  font-style: italic;
+  text-align: right;
+  position: relative;
+  top: -21px;
+  left: -7px;
+  margin: 0;
+}
+
+@media all and (min-width: 64.063em) {
+  /* line 94, ../../sass/_partials/base/base.scss */
+  article .img-container.expanded {
+    margin-left: -90px;
+    margin-right: -90px;
+  }
+}

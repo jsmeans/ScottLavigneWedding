@@ -1,0 +1,65 @@
+.date h1{
+	@extend %centered;
+}
+
+.date{
+	height: 500px;
+}
+
+
+.homenav ul,
+.centered,
+.rsvp-form{
+	position: relative;
+	top: 30%;
+}
+
+.rsvp{
+	background-image: url("images/galaxy.jpg");
+	background-size: cover;
+	height: 500px;
+	clear: both;
+	
+}
+.rsvp::before{
+	content: '';
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	position: absolute;
+	border: 1px solid white;
+	margin:25px;
+	height:450px;
+	width: 97.5%;
+}
+
+.field-wrap{
+	height: 45px
+
+	;
+}
+
+.ninja-forms-form-wrap input,
+.ninja-forms-form-wrap select, 
+.ninja-forms-form-wrap textarea{
+	width: 100% !important;
+	height: 45px !important;
+}
+
+.homenav{
+	height: 650px;
+}
+
+.homenav h2{
+	@extend %centered;
+	margin-top: 30px;
+}
+
+.homenav ul{
+	position: relative;
+	top: 10%;
+}
+
+.rsvpline{
+	border:1px solid white;
+}

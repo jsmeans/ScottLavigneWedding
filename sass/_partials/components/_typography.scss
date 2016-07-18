@@ -1,0 +1,50 @@
+/*_typography.scss*/
+
+@font-face {
+    font-family: "futurist";
+    src: url(fonts/futurist.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url(fonts/bebas.otf) format("opentype");
+}
+
+
+
+
+body {
+color: $text-color;
+font-size: $base-font-size;
+font-family: $base-font-family;
+font-weight: $base-font-weight;
+line-height: 1.6;
+}
+
+p{
+	font-size: 16px;
+	font-family: 'futurist';
+}
+
+h1 {
+	font-size: 56px;
+	font-family: 'futurist';
+}
+
+h2 {
+	font-size: 82px;
+	font-family: 'bebas';
+	font-weight: 100;
+}
+
+h3{
+	font-size: 32px;
+	font-family: 'futurist';
+	font-weight: 100;
+}
+
+.contact-info p,
+.contact-info h3{
+	color:white;
+	margin-top: 50px;
+}
