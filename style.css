@@ -288,15 +288,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-image: url(images/rings.jpg);
   background-size: cover;
   height: 900px; }
+  @media (max-width: 940px) {
+    /* line 164, sass/theme.scss */
+    .howpic {
+      height: 660px; } }
+  @media (max-width: 600px) {
+    /* line 164, sass/theme.scss */
+    .howpic {
+      height: 330px; } }
 
-/* line 169, sass/theme.scss */
+/* line 177, sass/theme.scss */
 .hotel-title,
 .how-title {
   width: 59.18367%;
   margin: 0 auto;
   padding-top: 24px; }
 
-/* line 176, sass/theme.scss */
+/* line 184, sass/theme.scss */
 .hotelpic {
   background-image: url(images/googlepic.jpg);
   background-size: cover;
@@ -307,7 +315,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   overflow: hidden;
   *zoom: 1; }
 
-/* line 184, sass/theme.scss */
+/* line 192, sass/theme.scss */
 .hotel {
   width: 79.59184%;
   margin: 0 auto;
@@ -315,11 +323,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   *zoom: 1;
   padding: 25px; }
   @media (max-width: 1200px) {
-    /* line 184, sass/theme.scss */
+    /* line 192, sass/theme.scss */
     .hotel {
       width: 100%; } }
 
-/* line 195, sass/theme.scss */
+/* line 203, sass/theme.scss */
 .info {
   width: 69.38776%;
   overflow: hidden;
@@ -328,29 +336,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 25px;
   color: white; }
   @media (max-width: 940px) {
-    /* line 195, sass/theme.scss */
+    /* line 203, sass/theme.scss */
     .info {
       width: 79.59184%; } }
   @media (max-width: 600px) {
-    /* line 195, sass/theme.scss */
+    /* line 203, sass/theme.scss */
     .info {
       width: 100%;
       float: left;
       margin-left: 0;
       margin-right: 0; } }
 
-/* line 211, sass/theme.scss */
+/* line 219, sass/theme.scss */
 .holder {
   width: 59.18367%;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1; }
   @media (max-width: 940px) {
-    /* line 211, sass/theme.scss */
+    /* line 219, sass/theme.scss */
     .holder {
       width: 79.59184%; } }
   @media (max-width: 600px) {
-    /* line 211, sass/theme.scss */
+    /* line 219, sass/theme.scss */
     .holder {
       width: 100%;
       float: left;

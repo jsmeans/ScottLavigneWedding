@@ -165,6 +165,14 @@ global-box-sizing:border-box,
 	background-image: url(images/rings.jpg);
 	background-size: cover;
 	height: 900px;
+
+	@media #{$brk-narrow}{
+		height: 660px;
+	}
+
+	@media #{$brk-mobile}{
+		 height:330px;
+	}
 }
 .hotel-title,
 .how-title{
