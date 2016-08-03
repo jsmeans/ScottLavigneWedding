@@ -1,16 +1,10 @@
 /*_typography.scss*/
 
-@font-face {
-    font-family: "futurist";
-    src: url(fonts/futurist.ttf) format("truetype");
-}
+@include font-face('futurist', font-files('futurist.ttf'));
 
-@font-face {
-    font-family: "bebas";
-    src: url(fonts/bebas.otf) format("opentype");
-}
+@include font-face('bebas', font-files('bebas.otf'));
 
-
+@include font-face('prima', font-files('primadona.otf'));
 
 
 body {
@@ -29,6 +23,13 @@ p{
 h1 {
 	font-size: 56px;
 	font-family: 'futurist';
+
+	@media #{$brk-narrow}{
+		font-size:51px;
+	}
+	@media #{$brk-mobile}{
+		font-size:36px;
+	}
 }
 
 h2 {
@@ -37,14 +38,81 @@ h2 {
 	font-weight: 100;
 }
 
+.widget h2{
+	font-size: $base-font-size;
+}
+
 h3{
 	font-size: 32px;
 	font-family: 'futurist';
 	font-weight: 100;
 }
 
+.rsvp input,
+.rsvp select{
+	font-family: 'futurist';
+	font-size: 32px;
+
+	@media #{$brk-wide}{
+		font-size:24px;	
+	}
+
+	@media #{$brk-narrow}{
+		font-size:15px;
+	}
+
+	@media #{$brk-mobile}{
+		font-size:12px;
+	}
+}
+
 .contact-info p,
 .contact-info h3{
 	color:white;
 	margin-top: 50px;
+}
+
+.fashion h1,
+.homenav a{
+	font-family: 'bebas';
+	font-size: 82px;
+	font-weight: 100;
+
+	@media #{$brk-narrow}{
+		font-size:67px;
+	}
+	@media #{$brk-mobile}{
+		font-size:42px;
+	}
+}
+
+.registry h1{
+	font-family: 'bebas';
+	font-size: 100px;
+	font-weight: 300;
+
+	@media #{$brk-narrow}{
+		font-size:75px;
+	}
+	@media #{$brk-mobile}{
+		font-size:50px;
+	}
+}
+
+.fashion p{
+	margin-top:50px;
+}
+
+.registry-link a{
+	font-family:'prima' ;
+	font-size: 50px;
+}
+.hotel-title,
+.how-title{
+	font-family: 'bebas';
+	color: white;
+}
+
+.navholder li{
+	font-family:'bebas';
 }

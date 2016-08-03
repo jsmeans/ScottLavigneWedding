@@ -1,300 +1,75 @@
-@-moz-keyframes logo-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes logo-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes logo-fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/* line 31, ../../sass/_partials/base/nav.scss */
-#banner img {
-  min-width: 100%;
-}
+/*
+Error: Undefined variable: "$brk-narrow".
+        on line 148 of D:/XAMPP/htdocs/JennyWedding/wordpress/wp-content/themes/studio-42-template/sass/_partials/base/nav.scss
 
-/* line 35, ../../sass/_partials/base/nav.scss */
-header nav h1.open {
-  z-index: 101;
-}
+143:   transition: opacity 100ms ease-in-out;
+144:   text-indent: 100%;
+145:   white-space: nowrap;
+146:   overflow: hidden;
+147: 
+148:   @media #{$brk-narrow}{
+149:     top: 5px;
+150:   }
+151:   @media #{$brk-mobile}{
+152:     top: 0px;
+153:     right: 0px;
 
-/* line 38, ../../sass/_partials/base/nav.scss */
-.logged-in header nav h1.open {
-  top: 55px;
-}
-
-/* line 41, ../../sass/_partials/base/nav.scss */
-header nav h1.open a {
-  margin: 0;
-}
-
-/* line 46, ../../sass/_partials/base/nav.scss */
-nav {
-  display: none;
-  background: rgba(255, 255, 255, 0.98);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-  overflow: scroll;
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 58, ../../sass/_partials/base/nav.scss */
-  nav {
-    overflow: visible;
-  }
-}
-/* line 62, ../../sass/_partials/base/nav.scss */
-nav > ul {
-  margin: 100px auto 0 !important;
-  text-align: center;
-  max-width: 300px;
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 68, ../../sass/_partials/base/nav.scss */
-  nav > ul {
-    margin: 100px 0 20px;
-    max-width: 100%;
-    text-align: center;
-  }
-}
-/* line 74, ../../sass/_partials/base/nav.scss */
-nav > ul > li {
-  display: block;
-  position: relative;
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 79, ../../sass/_partials/base/nav.scss */
-  nav > ul > li {
-    display: inline-block;
-    margin: 0 15px;
-    vertical-align: top;
-  }
-}
-@media all and (min-width: 64.063em) {
-  /* line 86, ../../sass/_partials/base/nav.scss */
-  nav > ul > li {
-    margin: 0 50px;
-  }
-}
-/* line 90, ../../sass/_partials/base/nav.scss */
-nav > ul > li > a {
-  font-size: 1.4em;
-  font-weight: 700;
-  padding: 10px 20px;
-  display: block;
-}
-
-/* line 96, ../../sass/_partials/base/nav.scss */
-nav > ul > li > a:hover {
-  color: rgba(56, 64, 71, 0.8);
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 100, ../../sass/_partials/base/nav.scss */
-  nav > ul > li > a {
-    line-height: 60px;
-    font-size: 1.6em;
-  }
-}
-/* line 105, ../../sass/_partials/base/nav.scss */
-nav .sub-menu {
-  display: block;
-  margin: -10px 0 20px !important;
-}
-
-/* line 109, ../../sass/_partials/base/nav.scss */
-nav .sub-menu a {
-  font-size: 1em;
-  display: block;
-  padding: 5px 20px;
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 115, ../../sass/_partials/base/nav.scss */
-  nav .sub-menu a {
-    padding: 5px 0;
-  }
-}
-/* line 119, ../../sass/_partials/base/nav.scss */
-nav .sub-menu a:hover {
-  color: rgba(56, 64, 71, 0.8);
-}
-
-@media all and (min-width: 40.063em) {
-  /* line 123, ../../sass/_partials/base/nav.scss */
-  nav {
-    overflow: visible;
-  }
-}
-/* line 128, ../../sass/_partials/base/nav.scss */
-.nav-toggle {
-  background: rgba(255, 255, 255, 0.5);
-  height: 50px;
-  width: 60px;
-  display: block;
-  z-index: 102;
-  position: fixed;
-  top: 25px;
-  right: 19px;
-  opacity: 0.6;
-  -webkit-transition: opacity 100ms ease-in-out;
-  -moz-transition: opacity 100ms ease-in-out;
-  -o-transition: opacity 100ms ease-in-out;
-  transition: opacity 100ms ease-in-out;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-/* line 146, ../../sass/_partials/base/nav.scss */
-.logged-in .nav-toggle {
-  top: 50px;
-}
-
-/* line 149, ../../sass/_partials/base/nav.scss */
-.nav-toggle:hover {
-  opacity: 1;
-}
-
-/* line 152, ../../sass/_partials/base/nav.scss */
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  display: block;
-  cursor: pointer;
-  height: 5px;
-  width: 40px;
-  background: #384047;
-  position: absolute;
-  display: block;
-  content: "";
-  left: 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
-}
-
-/* line 174, ../../sass/_partials/base/nav.scss */
-.nav-toggle span {
-  top: 23px;
-  left: 10px;
-}
-
-/* line 178, ../../sass/_partials/base/nav.scss */
-.nav-toggle span:before {
-  top: -12px;
-}
-
-/* line 181, ../../sass/_partials/base/nav.scss */
-.nav-toggle span:after {
-  bottom: -12px;
-}
-
-/* line 184, ../../sass/_partials/base/nav.scss */
-.nav-toggle span:hover span:before {
-  top: -15px;
-}
-
-/* line 187, ../../sass/_partials/base/nav.scss */
-.nav-toggle span:hover span:after {
-  bottom: -15px;
-}
-
-/* line 190, ../../sass/_partials/base/nav.scss */
-.nav-toggle.open {
-  opacity: 1;
-}
-
-/* line 193, ../../sass/_partials/base/nav.scss */
-.nav-toggle.open span {
-  background: none;
-}
-
-/* line 196, ../../sass/_partials/base/nav.scss */
-.nav-toggle.open span:before {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 0;
-  left: 0;
-  background: #ed5a5a;
-}
-
-/* line 206, ../../sass/_partials/base/nav.scss */
-.nav-toggle.open span:after {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  bottom: 0;
-  left: 0;
-  background: #ed5a5a;
-}
-
-/* line 217, ../../sass/_partials/base/nav.scss */
-.site-title {
-  position: absolute;
-  top: 25px;
-  left: 19px;
-}
-
-/* line 223, ../../sass/_partials/base/nav.scss */
-nav .current {
-  top: 57px;
-}
-
-/* line 225, ../../sass/_partials/base/nav.scss */
-.page-nav li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-/* line 229, ../../sass/_partials/base/nav.scss */
-.page-nav li a {
-  background: #edeff0;
-  padding: 10px;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-}
-
-/* line 242, ../../sass/_partials/base/nav.scss */
-.page-nav li a:hover {
-  background: #384047;
-  color: white;
-}
+Backtrace:
+D:/XAMPP/htdocs/JennyWedding/wordpress/wp-content/themes/studio-42-template/sass/_partials/base/nav.scss:148
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/interpolation.rb:170:in `_perform'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:542:in `block in run_interp_no_strip'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:540:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:540:in `run_interp_no_strip'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:547:in `run_interp'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:512:in `visit_media'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `call'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+D:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$brk-narrow\".\A         on line 148 of D:/XAMPP/htdocs/JennyWedding/wordpress/wp-content/themes/studio-42-template/sass/_partials/base/nav.scss\A \A 143:   transition: opacity 100ms ease-in-out;\A 144:   text-indent: 100%;\A 145:   white-space: nowrap;\A 146:   overflow: hidden;\A 147: \A 148:   @media #{$brk-narrow}{\A 149:     top: 5px;\A 150:   }\A 151:   @media #{$brk-mobile}{\A 152:     top: 0px;\A 153:     right: 0px;"; }

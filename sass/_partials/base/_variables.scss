@@ -4,3 +4,17 @@ $text-color: black;
 $base-font-size: 16px;
 $base-font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
 $base-font-weight: 400;
+
+
+//Color Variables
+
+$white  		: #fff;
+$black			: #000;
+$t-blue			: rgba(27, 61, 110, 0.66);
+$blue 			: #1B3D6E;
+
+//Media Queries
+$brk-mobile: '(max-width: 600px)';
+$brk-narrow: '(max-width:940px)';
+$brk-wide:'(max-width: 1200px)';
+

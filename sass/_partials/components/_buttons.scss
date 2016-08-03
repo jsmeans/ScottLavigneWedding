@@ -10,15 +10,11 @@ textarea,
 button,
 select {
   outline: none;
-  font-family: "futurist", sans-serif;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   border-radius: 2px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 input,
@@ -83,9 +79,7 @@ input#s {
   float: left;
   margin: 1px;
 }
-.widget {
-  margin: 10px 0 20px;
-}
+
 .btn:hover, #submit:hover, .comment .comment-reply-link:hover {
   background: #2d3339;
   color: white;

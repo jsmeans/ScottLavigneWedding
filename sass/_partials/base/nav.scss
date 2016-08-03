@@ -126,9 +126,11 @@ nav .sub-menu a:hover {
 }
 
 .nav-toggle {
-  background: rgba(255, 255, 255, 0.5);
-  height: 50px;
-  width: 60px;
+  background-image: url('images/tardis-menu.png');
+  background-size: contain;
+  background-repeat:no-repeat;
+  height: 140px;
+  width: 100px;
   display: block;
   z-index: 102;
   position: fixed;
@@ -142,6 +144,16 @@ nav .sub-menu a:hover {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
+
+  @media #{$brk-narrow}{
+    top: 5px;
+  }
+  @media #{$brk-mobile}{
+    top: 0px;
+    right: 0px;
+    width: 75px;
+  }
+
 }
 .logged-in .nav-toggle {
   top: 50px;
@@ -149,27 +161,9 @@ nav .sub-menu a:hover {
 .nav-toggle:hover {
   opacity: 1;
 }
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  display: block;
-  cursor: pointer;
-  height: 5px;
-  width: 40px;
-  background: #384047;
-  position: absolute;
-  display: block;
-  content: "";
-  left: 0;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: all 100ms ease-in-out;
-  -moz-transition: all 100ms ease-in-out;
-  -o-transition: all 100ms ease-in-out;
-  transition: all 100ms ease-in-out;
+.nav-toggle::after {
+  content: "menu";
+ 
 }
 .nav-toggle span {
   top: 23px;

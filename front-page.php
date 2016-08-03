@@ -15,22 +15,19 @@
 
 
 <section class="homenav">
-  
-    <ul>
-      <li>
-        <?php get_template_part('content', 'how'); ?>
-      </li>
-      <li>
-       <?php get_template_part('content', 'hotel'); ?>
-      </li>
-      <li>
-       <?php get_template_part('content', 'fashion'); ?>
-      </li>
-      <li>
-        <?php get_template_part('content', 'registry'); ?>
-      </li>
-    </ul>
-  
+
+  <?php 
+
+    $defaults = array(
+      'container' => false,
+      'theme_location'  => 'first-menu',
+      'menu_class'  => 'no-bullet'
+    );
+
+    wp_nav_menu( $defaults );
+
+  ?>
+      
 </section>
 
 <?php get_footer(); ?>

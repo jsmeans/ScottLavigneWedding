@@ -9,11 +9,11 @@ Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, 
 */
 @import "compass";
 @import "compass/reset";
-@import "theme";
-@import "_partials/base/base";
 @import "_partials/base/_variables";
 @import "_partials/base/_mixins";
 @import "_partials/base/_extends";
+@import "theme";
+@import "_partials/base/base";
 @import "_partials/base/nav";
 @import "_partials/components/typography";
 @import "_partials/components/_buttons";
@@ -21,6 +21,8 @@ Tags: black, white, light, one-column, two-columns, left-sidebar, fluid-layout, 
 @import "_partials/layout/index";
 @import "_partials/layout/header";
 @import "_partials/layout/footer";
+@import "_partials/layout/fashion";
+@import "_partials/layout/registry";
 
 .no-max {
   max-width: 100%;

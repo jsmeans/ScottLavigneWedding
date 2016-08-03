@@ -29,7 +29,7 @@
 
     <div class="navholder"> 
          
-      <a href="" class="nav-toggle"><span></span>Menu</a>
+      <a href="" class="nav-toggle"><img src="<?php bloginfo('template_directory'); ?>/images/tardis-menu.png">menu</a>
     
       <nav>
        
@@ -39,6 +39,18 @@
           $defaults = array(
             'container' => false,
             'theme_location'  => 'primary-menu',
+            'menu_class'  => 'no-bullet'
+          );
+
+          wp_nav_menu( $defaults );
+
+        ?>
+
+        <?php 
+
+          $defaults = array(
+            'container' => false,
+            'theme_location'  => 'second-menu',
             'menu_class'  => 'no-bullet'
           );
 

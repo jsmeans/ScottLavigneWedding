@@ -7,7 +7,7 @@ $susy: (
 columns:10,
 gutters: 1/4,
 global-box-sizing:border-box,
-debug: (image: show)
+/*debug: (image: show)*/
 );
 
 .date {
@@ -21,10 +21,18 @@ debug: (image: show)
 
 .name-wrap{
 	@include span(3 of 6);
+
+	@media #{$brk-mobile}{
+		@include span(6 of 6);
+	}
 }
 
 .surname-wrap{
 	@include span(3 of 6 last);
+
+	@media #{$brk-mobile}{
+		@include span(6 of 6);
+	}
 }
 
 .dropdown-wrap{
@@ -34,21 +42,22 @@ debug: (image: show)
 	width: span(5);
 	margin: 0 Auto;
 }
-.rsvp input,
-.rsvp select{
-	@font-family: futurist;
-	font-size: 32px;
+
+.tardis{
+	@include span(10 of 10);
 }
 
-.homenav{
+.homenav ul{
 	width:span(6);
 	margin:0 auto;
+	@extend %centered;
 	@include clearfix;
 }
 .rsvpline{
 	width:span(9.8);
 	margin:0 auto;
 }
+.img-overlay,
 .footer-overlay{
 	@include span(10 of 10);
 	@include clearfix;
@@ -62,8 +71,153 @@ debug: (image: show)
 .contact-wrap{
 	width: span(6);
 	margin:0 auto;
+	@media #{$brk-narrow}{
+		@include span(10 of 10);
+	}
 }
 
 .contact-post{
 	@include span(3 of 6 first);
+
+	@media #{$brk-mobile}{
+		@include span(10 of 10);
+	}
+}
+.footer-holder{
+	@include span(10 of 10);
+}
+.left-widget{
+	@include span(2 of 10 first);
+
+	@media #{$brk-mobile}{
+		@include span(10 of 10);
+	}
+}
+.studio42{
+	@include span(4 of 10 last);
+
+	@media #{$brk-mobile}{
+		@include span(10 of 10);
+	}
+}
+
+
+.fashionpic{
+    @include span(3 of 10 first);
+
+	@media #{$brk-narrow}{
+		display:none;
+	}
+}
+
+.fashionpic2{
+    display:none;
+
+    @media #{$brk-wide}{
+    	
+		
+	}
+
+	@media #{$brk-narrow}{
+		display:block;
+		width:span(3);
+		margin:0 auto;
+	}
+}
+
+.fashion{
+	@include span(7 of 10 last);
+
+	@media #{$brk-narrow}{
+		@include span(12 of 12);
+		margin-bottom: 25px;
+	}
+}
+
+.registrypic{
+	width: span(7);
+	margin: 0 auto;
+}
+
+.registrypic img{
+	@include span(7 of 7);
+}
+.registry h1{
+	width: span(7);
+	margin-left: span(2);
+	text-align: center;
+	margin-bottom: 50px;
+}
+.registry{
+	width: span(7);
+	margin: 50px auto;
+	position: relative;
+    top: -90px;
+}
+.registry-link{
+	width: span(7);
+	margin: 100px auto;
+	text-align: center;
+
+}
+
+.howpic{
+	background-image: url(images/rings.jpg);
+	background-size: cover;
+	height: 900px;
+}
+.hotel-title,
+.how-title{
+	width: span(6);
+	margin: 0 auto;
+	padding-top:24px;
+}
+
+.hotelpic{
+	background-image: url(images/googlepic.jpg);
+    background-size: cover;
+    @include span(10 of 10);
+	@include clearfix;
+}
+
+
+.hotel{
+	width: span(8);
+	margin: 0 auto;
+	@include clearfix;
+	padding:25px;
+
+	@media #{$brk-wide}{
+		width:span(10);
+	}
+}
+
+.info{
+	width: span(7);
+	@include clearfix;
+	margin: 0 auto;
+	padding:25px;
+	color:white;
+
+	@media #{$brk-narrow}{
+		width:span(8);
+	}
+
+	@media #{$brk-mobile}{
+		 @include span(10 of 10);
+	}
+}
+
+.holder{
+	width: span(6);
+	margin: 0 auto;
+	@include clearfix;
+
+	@media #{$brk-narrow}{
+		width:span(8);
+	}
+
+	@media #{$brk-mobile}{
+		@include span(10 of 10);
+	}
 }
