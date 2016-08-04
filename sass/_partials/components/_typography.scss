@@ -70,6 +70,10 @@ h3{
 .contact-info h3{
 	color:white;
 	margin-top: 50px;
+
+	@media #{$brk-mobile}{
+		margin-top: 20px;
+	}
 }
 
 .fashion h1,
@@ -82,7 +86,7 @@ h3{
 		font-size:67px;
 	}
 	@media #{$brk-mobile}{
-		font-size:42px;
+		font-size:40px;
 	}
 }
 

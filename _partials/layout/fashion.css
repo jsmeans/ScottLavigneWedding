@@ -1,9 +1,4 @@
 /* line 3, ../../sass/_partials/layout/fashion.scss */
-.holder {
-  min-height: 900px;
-  margin-top: 50px; }
-
-/* line 9, ../../sass/_partials/layout/fashion.scss */
 .fashionpic2 img,
 .fashionpic img {
   max-height: 750px; }

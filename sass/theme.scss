@@ -71,8 +71,17 @@ global-box-sizing:border-box,
 .contact-wrap{
 	width: span(6);
 	margin:0 auto;
+
+	@media #{$brk-wide}{
+		width: span(8);
+	}
+
 	@media #{$brk-narrow}{
 		@include span(10 of 10);
+	}
+
+	@media #{$brk-mobile}{
+		padding:0px 25px;
 	}
 }
 
@@ -217,6 +226,8 @@ global-box-sizing:border-box,
 }
 
 .holder{
+	min-height: 900px;
+	margin-top: 50px;
 	width: span(6);
 	margin: 0 auto;
 	@include clearfix;
@@ -227,5 +238,6 @@ global-box-sizing:border-box,
 
 	@media #{$brk-mobile}{
 		@include span(10 of 10);
+		padding:50px 25px;
 	}
 }

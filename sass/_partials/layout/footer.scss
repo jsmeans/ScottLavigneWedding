@@ -55,7 +55,9 @@
 }
 .footer-image{
   background-image: url(images/footerimg.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
   height: 500px;
 }
 
