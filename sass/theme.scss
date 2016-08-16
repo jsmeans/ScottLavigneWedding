@@ -227,7 +227,7 @@ global-box-sizing:border-box,
 
 .holder{
 	min-height: 900px;
-	margin-top: 50px;
+	padding: 50px;
 	width: span(6);
 	margin: 0 auto;
 	@include clearfix;
